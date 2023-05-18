@@ -14,15 +14,16 @@
 }
 
 #burgermenu{
-    display: none; /*burgermenu vises*/
+    display: none; /*burgermenu vises ikke*/
 }
 
 /*---------------------------TEKST-----------------------------------------------------------*/
 p{
-    font-family: 'Abel', sans-serif;
-    font-size: 15pt;
+    font-family: sans-serif;
+    font-size: 13pt;
     color: white;
     font-weight: 200;
+    line-height: 1.5;
 }
 
 /*--overskrift i den grønne boks---*/
@@ -58,15 +59,30 @@ h4{
     font-weight: 200;
 }
 
+ul{
+    font-family: sans-serif;
+    font-size: 13pt;
+    color: white;
+    font-weight: 200;
+    padding-left: 2%;
+    line-height: 1.5;
+}
+
 
 /*---------------------------HEADER-----------------------------------------------------------*/
 
+
+
 #logo{
-    background-color: aqua;
+    padding-top: 20%;
+    padding-left: 20%;
+}
+
+.headerdiv{
+    display: flex;
 }
 
 header{
-    display: flex;
     justify-content: center;
     position: fixed;
     top: 0;
@@ -81,6 +97,9 @@ header{
 header nav{
     display: flex;
     justify-content: end;
+
+    width: 100%;
+    padding-top: 3%;
 }
 
 header nav a{
@@ -89,6 +108,7 @@ header nav a{
     text-decoration:none;
     font-family: 'Abel', sans-serif;
     color: white;
+
 }
 
 header nav a:hover{
@@ -133,6 +153,23 @@ header nav a:hover{
     display: flex;
     border: 0.5px solid rgb(255, 255, 255);
 }
+
+/*--effekt på forsidebillede - fade ind--*/
+.introbilledeL{
+    opacity: 0;
+    animation: fade-in 1s ease-in-out forwards;
+    }
+
+    @keyframes fade-in {
+        from{
+            opacity: 0.6;
+        }
+        to{
+            opacity: 1;
+        }
+}
+
+
 
 /*--Den grønne boks med tekst--*/
 .grøntekstboks{
@@ -193,8 +230,8 @@ header nav a:hover{
     width: 100%;
     height: auto;
     border: 0.5px solid rgb(255, 255, 255);
-    padding-left: 20%;
-    padding-right: 20%;
+    padding-left: 30%;
+    padding-right: 30%;
     padding-top: 10%;
     padding-bottom: 10%;
     text-align: start;
