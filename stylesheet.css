@@ -146,6 +146,14 @@ header nav a:hover{
 
 /*--FORSIDEN--*/
 
+/*--video--*/
+video{
+    width: 100%;
+    height: auto;
+    display: flex;
+    border: 0.5px solid rgb(255, 255, 255);
+}
+
 /*--Det store forside billede--*/
 .introbilledeL{
     width: 100%;
@@ -260,15 +268,16 @@ footer{
 
 /*------------------BILLEDER--------------*/
 
-/*--Forsidebilleder laptop--*/
-    .introbilledeL{
-        display: none;
-    }
 
 /*--Forsidebilleder mobil--*/
     .introbilledeM{
         display: block;
         width: 100%;
+    }
+
+    /*--Forsidevideo laptop--*/
+    video{
+        display: none;
     }
 
     /*--De tre billeder på forsiden--*/
@@ -341,7 +350,8 @@ footer{
     .navbar .nav-container li { /*for at alle punkter ikke får en prik foran sig (fordi <li>)*/
         list-style: none;
         }
-          
+    
+    /*---teksten i burgermenuen---*/
     .navbar .nav-container a {
         text-decoration: none;
         color: rgb(255, 255, 255);
@@ -361,7 +371,7 @@ footer{
         display: block;
         height: 32px;
         width: 32px;
-        top: 40px;
+        top: 20px;
         right: 20px;
         z-index: 5;
         opacity: 0;
@@ -373,15 +383,16 @@ footer{
         height: 26px;
         width: 32px;
         position: absolute;
-        top: 40px;
+        top: 20px;
         right: 20px;
         z-index: 2;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         }
-          
-    .nav-container .hamburger-lines .line { /*styling af den enkelte linje i burgeren*/
+    
+    /*linjene i burgermenuen*/
+    .nav-container .hamburger-lines .line {
         display: block;
         height: 4px;
         width: 100%;
@@ -402,8 +413,9 @@ footer{
         transform-origin: 0% 100%;
         transition: transform 0.4s ease-in-out;
         }
-          
-    .navbar .menu-items { /*styling til hvordan linksene er placeret og transformeres*/
+    
+    /*den grønne kasse bag linksne i burgermenuen*/
+    .navbar .menu-items {
         padding-top: 120px;
         background-color: #828a54;
         height: 110vh;
@@ -435,9 +447,9 @@ footer{
 
     #burgerlogo {
         position: absolute;
-        top: 5px;
-        left: 15px;
-        width: 10%;
+        top: 15px;
+        left: 25px;
+        width: 15%;
         height: auto; 
         margin-top: 20px;
         }
