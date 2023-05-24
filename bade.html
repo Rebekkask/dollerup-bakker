@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Velkommen til dollerup bakker/badebro</title>
+    <meta name="Badebroen ved Hald sø" content="Velkommen til Dollerup badebroen. Her kan du finde information om badebroen, Hald sø og området omkring samt billeder deraf">
+    <meta name="keywords" content="natur, løvskov, skov, hald sø, vand, sø, badebro, bålplads, praktisk information, aktiviteter, inspiration">
+
      <!--Link til stylesheet-->
      <link rel="stylesheet" href="stylesheet.css">
      <!--Link til fonts-->
@@ -17,9 +20,11 @@
 <body>
         <!-------------------------------------------------------------HEADER------------------------------------------------------------>
         <header>
-            <div class="headerdiv">
+        <div class="headerdiv">
                 <!--Logo-->
-                <a href="index.html"><div id="logo"><img src="billeder/dolleruplogo.png" alt="dollerup bakker logo"></div></a>
+                <div id="logo">
+                    <a href="index.html"><img src="billeder/dolleruplogo.png" alt="dollerup bakker logo"></a>
+                </div>
         
             <!--Knapperne i headeren-->  
             <nav>
@@ -62,31 +67,37 @@
                                 </div>
                         </div>
             </nav>
-        
+        </div>
             <!----------BURGERMENU--------->
             <nav id="burgermenu">
                 <div class="navbar">
                   <div class="container nav-container">
-                      <input class="checkbox" type="checkbox"/>
-                      <div class="hamburger-lines">
-                        <span class="line line1"></span>
-                        <span class="line line2"></span>
-                        <span class="line line3"></span>
-                      </div>  
-                    <div class="menu-items">
-                    <a href="index.html"> <img id="burgerlogo" src="billeder/dolleruplogo.png"></a>
-                      <li><a href="#">OVERNATNING</a></li>
-                      <li><a class="ddc" href="overnat.html">Shelterpladsen v. Hald</a></li>
-                      <li><a class="ddc" href="#">Lejrplads Hald sø</a></li></br></br>
-
-                      <li><a href="#">RUTER</a></li>
-                      <li><a class="ddc" href="rute.html">Inderøen</a></li>
-                      <li><a class="ddc" href="#">Hald sø rundt</a></li></br></br>
-
-                      <li><a href="#">BADESTEDER</a></li>
-                      <li><a class="ddc" href="bade.html">Dollerup badebro</a></li>
-                      <li><a class="ddc" href="#">Skytteholm</a></li>
-                    </div>
+                      <input class="checkbox" type="checkbox" />
+                        <div class="hamburger-lines">
+                            <span class="line line1"></span>
+                            <span class="line line2"></span>
+                            <span class="line line3"></span>
+                        </div>  
+                
+                        <div class="menu-items">
+                            <a href="index.html"> <img id="burgerlogo" src="billeder/dolleruplogo.png" alt="logo dollerup bakker"></a>
+                            <ul>
+                                <li><a href="#">OVERNATNING</a></li>
+                                <li><a class="ddc" href="overnat.html">Shelterpladsen v. Hald</a></li>
+                                <li><a class="ddc" href="#">Lejrplads Hald sø</a></li>
+                                <li><a class="ddc" href="#">Autocamper</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="#">RUTER</a></li>
+                                <li><a class="ddc" href="rute.html">Inderøen</a></li>
+                                <li><a class="ddc" href="#">Hald sø rundt</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="#">BADESTEDER</a></li>
+                                <li><a class="ddc" href="bade.html">Dollerup badebro</a></li>
+                                <li><a class="ddc" href="#">Skytteholm</a></li>
+                            </ul>
+                        </div>
                   </div>
                 </div>
               </nav>
@@ -97,27 +108,29 @@
         <img class="introbilledeM" src="billeder/badekvadrat1.jpg" alt="dollerup bakker badebro">
 
         
-        <div>
-            <section id="blaatekstboks">
-                <h1>HALD SØ BADEBRO</h1>
-                <br>
-                <p>Spring i det klare vand fra badebroen ved Hald sø. 
-                    Vandet omkring broen er forholdsvis lavvandet og her er god mulighed for både børn og voksne at plaske rundt. Fra broen er det muligt at hoppe på dit paddelboard, i din kajak eller ligne. 
-                    <br> <br>
-                    Hald sø er Danmarks tredje dybeste sø, med en dybde på 31 meter på det dybeste sted. Derfor skal man, når man svømmer, være opmærksom på at vandet hurtigt bliver meget koldt, desto længere ud man kommer, og at der derfor er risiko for at få krampe.
-                    </p><br> <br> <br>
-                    <h3>Pladsen indeholder: </h3><br>
-                    <ul class="punkter">
-                        <li>Badebro</li>
-                        <li>Bålsted</li>
-                        <li>Bordbænke sæt</li>
-                        <li>Skraldespande</li>
-                        <li>Parkeringsplads</li>
-                    </ul>
-                <div class="kortboks">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2488.9452705171234!2d9.330743977005003!3d56.367125744507206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464bef35fbce9877%3A0x4e6e6815b374db0e!2sDollerup%20badebro%20syd!5e1!3m2!1sda!2sdk!4v1684484821205!5m2!1sda!2sdk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
-            </section>
+        <div id="blaatekstboks">
+            <h1>HALD SØ BADEBRO</h1>
+            <br>
+            <p>Spring i det klare vand fra badebroen ved Hald sø. 
+                Vandet omkring broen er forholdsvis lavvandet og her er god mulighed for både børn 
+                og voksne at plaske rundt. Fra broen er det muligt at hoppe på dit paddelboard, i 
+                din kajak eller ligne. 
+                <br> <br>
+                Hald sø er Danmarks tredje dybeste sø, med en dybde på 31 meter på det dybeste 
+                sted. Derfor skal man, når man svømmer, være opmærksom på at vandet hurtigt bliver 
+                meget koldt, desto længere ud man kommer, og at der derfor er risiko for at få krampe.</p>
+                <br> <br> <br>
+            <h3>Pladsen indeholder: </h3><br>
+                <ul class="punkter">
+                    <li>Badebro</li>
+                    <li>Bålsted</li>
+                    <li>Bordbænke sæt</li>
+                    <li>Skraldespande</li>
+                    <li>Parkeringsplads</li>
+                </ul>
+            <div class="kortboks">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2488.9452705171234!2d9.330743977005003!3d56.367125744507206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464bef35fbce9877%3A0x4e6e6815b374db0e!2sDollerup%20badebro%20syd!5e1!3m2!1sda!2sdk!4v1684484821205!5m2!1sda!2sdk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
         </div>
 
         <!------------------De to billeder--------------->
@@ -126,7 +139,7 @@
             <img class="kvadrat2" src="billeder/badekvadrat3.jpg" alt="dollerup bakker badebro">
         </div>
     </main>
-
+<!-------------------------------------------------------------------FOOTER------------------------------------------------------------->
     <footer>
         <div class="footerboks">
             <h4>Følg os</h4>
