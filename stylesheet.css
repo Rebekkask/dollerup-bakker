@@ -46,12 +46,14 @@ h2{
     z-index: 998;
 }
 
+/*--overskrift mellem tekst---*/
 h3{
     font-family: 'Abel', sans-serif;
     font-size: 20pt;
     color: white;
 }
 
+/*--overskriften i footeren---*/
 h4{
     font-family: 'Abel', sans-serif;
     font-size: 30pt;
@@ -134,7 +136,7 @@ header nav a:hover{
   
 .dropdown-content{
     display:none;
-    color: white;
+    color: rgb(255, 255, 255);
     position: absolute;
     z-index: 1;
 /*--breden på dropdown menu--*/
@@ -325,16 +327,22 @@ footer{
     .grøntekstboks{
         padding-left: 10%;
         padding-right: 10%;
+        padding-top: 20%;
+        padding-bottom: 20%;
     }
 
-    .blaatekstboks{
+    #blaatekstboks{
         padding-left: 10%;
         padding-right: 10%;
+        padding-top: 20%;
+        padding-bottom: 20%;
     }
 
 /*---------------------------TEKST----------*/
+
     h2{
-        font-size: 50pt;
+        font-size: 45pt;
+        padding: 5%;
     }
     p{
         font-size: 11pt;
@@ -393,7 +401,7 @@ footer{
         color: rgb(255, 255, 255);
         font-weight: 500;
         font-size: 1.2rem;
-        padding: 50px;
+        padding: 0.7rem;
         } 
     
 
@@ -456,14 +464,14 @@ footer{
     
     /*den grønne kasse bag linksne i burgermenuen*/
     .navbar .menu-items {
-        padding-top: 120px;
+        padding-top: 180px;
         background-color: #828a54;
         height: 110vh;
         width: 100%;
         transform: translate(-150%);
         display: flex;
         flex-direction: column;
-        padding-left: 50px;
+        padding-left: 3%;
         transition: transform 0.5s ease-in-out;
         text-align: center;
         line-height: 10PX;
